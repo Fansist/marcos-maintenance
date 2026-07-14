@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcos Maintenance | San Diego Landscaping &amp; Lawn Maintenance (College Area)</title>
+<meta name="description" content="Marcos Maintenance is a family-run landscaping company serving San Diego's College Area &amp; Mid-City since 2001, sod installation, yard clean-ups, and monthly lawn maintenance. 101+ Yelp reviews, 4.5 stars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep-green-950:#0f1c13;
+    --deep-green-900:#17281c;
+    --deep-green-800:#1f3626;
+    --deep-green-700:#2b4a33;
+    --deep-green-600:#3d6247;
+    --green-500:#4f7a5a;
+    --green-accent:#7fa877;
+    --moss:#9dc18b;
+    --earth-brown-700:#5c4530;
+    --earth-brown-500:#8a6a45;
+    --earth-brown-300:#c9a874;
+    --clay:#b8763f;
+    --clay-dark:#96602f;
+    --sand-100:#f6f1e6;
+    --sand-50:#fbf8f1;
+    --cream:#fdfbf5;
+    --ink:#1b2a1f;
+    --white:#ffffff;
+    --focus-ring:#e0a63a;
+    --radius-lg:24px;
+    --radius-md:16px;
+    --radius-sm:10px;
+    --shadow-soft:0 10px 30px -12px rgba(15,28,19,0.28);
+    --shadow-lift:0 24px 48px -18px rgba(15,28,19,0.42);
+    --ease:cubic-bezier(.22,.68,.36,1);
+    --t-fast:0.22s var(--ease);
+    --t-standard:0.4s var(--ease);
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Karla', system-ui, sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    line-height:1.12;
+    margin:0 0 0.5em;
+    color:var(--deep-green-950);
+    letter-spacing:-0.01em;
+  }
+  p{margin:0 0 1em;}
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;}
+  ul{margin:0;padding:0;}
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* Focus visibility */
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible{
+    outline:3px solid var(--focus-ring);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .skip-link{
+    position:absolute;
+    left:-999px;
+    top:auto;
+    background:var(--deep-green-950);
+    color:var(--sand-50);
+    padding:12px 20px;
+    border-radius:0 0 8px 0;
+    z-index:200;
+    font-weight:600;
+    text-decoration:none;
+  }
+  .skip-link:focus{
+    left:0;
+    top:0;
+  }
+
+  /* ===== HEADER ===== */
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(15,28,19,0.95);
+    backdrop-filter:blur(12px) saturate(140%);
+    -webkit-backdrop-filter:blur(12px) saturate(140%);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 24px;
+    gap:16px;
+    max-width:1240px;
+    margin:0 auto;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:var(--sand-50);
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.18rem;
+    letter-spacing:0.01em;
+    transition:opacity var(--t-fast);
+  }
+  .brand:hover{opacity:0.85;}
+  .brand-mark{
+    width:38px;
+    height:38px;
+    flex-shrink:0;
+  }
+  .main-nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+  }
+  .main-nav a{
+    text-decoration:none;
+    color:var(--sand-100);
+    font-weight:600;
+    font-size:0.94rem;
+    letter-spacing:0.02em;
+    position:relative;
+    padding:6px 2px;
+    transition:color var(--t-fast);
+  }
+  .main-nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:2px;
+    background:var(--earth-brown-300);
+    transition:width var(--t-standard);
+  }
+  .main-nav a:hover{color:var(--white);}
+  .main-nav a:hover::after,
+  .main-nav a:focus-visible::after{width:100%;}
+
+  .header-cta{
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .btn-call-header{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--earth-brown-300);
+    color:var(--deep-green-950);
+    padding:10px 20px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:0.92rem;
+    white-space:nowrap;
+    transition:transform var(--t-fast), background var(--t-fast), box-shadow var(--t-fast);
+    box-shadow:0 4px 14px -6px rgba(201,168,116,0.5);
+  }
+  .btn-call-header:hover{
+    background:var(--sand-50);
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px -10px rgba(201,168,116,0.65);
+  }
+  .btn-call-header:active{transform:translateY(0);}
+
+  .nav-toggle{
+    display:none;
+    background:none;
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:8px;
+    width:44px;
+    height:44px;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:background var(--t-fast), border-color var(--t-fast);
+  }
+  .nav-toggle:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5);}
+  .nav-toggle svg{stroke:var(--sand-50);}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    color:var(--sand-50);
+    padding:clamp(96px, 14vw, 148px) 24px clamp(88px, 12vw, 120px);
+  }
+  .hero-bg{
+    position:absolute;
+    inset:0;
+    background-image:url('photos/photo6.jpg');
+    background-size:cover;
+    background-position:center 55%;
+    z-index:0;
+  }
+  .hero-bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(ellipse at 12% 15%, rgba(157,193,139,0.22), transparent 55%),
+      radial-gradient(ellipse at 88% 88%, rgba(138,106,69,0.32), transparent 55%),
+      linear-gradient(165deg, rgba(11,20,14,0.96) 0%, rgba(15,28,19,0.93) 42%, rgba(19,34,23,0.9) 100%);
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+      repeating-linear-gradient(115deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 60px);
+    pointer-events:none;
+    z-index:1;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    max-width:920px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .hero-eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.22);
+    padding:9px 20px;
+    border-radius:999px;
+    font-size:0.85rem;
+    font-weight:700;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-bottom:30px;
+    color:var(--moss);
+    opacity:0;
+    animation:fadeUp 0.8s ease forwards;
+  }
+  .hero h1{
+    font-size:clamp(2.8rem, 6.4vw, 5rem);
+    color:var(--sand-50);
+    margin-bottom:0.3em;
+    opacity:0;
+    animation:fadeUp 0.8s ease 0.12s forwards;
+  }
+  .hero .tagline{
+    font-size:clamp(1.12rem, 2.2vw, 1.42rem);
+    color:var(--sand-100);
+    max-width:660px;
+    margin:0 auto 46px;
+    font-weight:400;
+    opacity:0;
+    animation:fadeUp 0.8s ease 0.24s forwards;
+  }
+  .hero-ctas{
+    display:flex;
+    gap:18px;
+    justify-content:center;
+    flex-wrap:wrap;
+    opacity:0;
+    animation:fadeUp 0.8s ease 0.36s forwards;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:17px 34px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:1.02rem;
+    text-decoration:none;
+    transition:transform var(--t-fast), box-shadow var(--t-fast), background var(--t-fast);
+    border:2px solid transparent;
+  }
+  .btn-primary{
+    background:var(--earth-brown-300);
+    color:var(--deep-green-950);
+    box-shadow:0 8px 26px -8px rgba(201,168,116,0.55);
+  }
+  .btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 16px 34px -10px rgba(201,168,116,0.7);
+    background:#d8bb8a;
+  }
+  .btn-primary:active{transform:translateY(-1px);}
+  .btn-secondary{
+    background:rgba(255,255,255,0.04);
+    border-color:rgba(255,255,255,0.4);
+    color:var(--sand-50);
+  }
+  .btn-secondary:hover{
+    background:rgba(255,255,255,0.12);
+    border-color:var(--sand-50);
+    transform:translateY(-3px);
+  }
+  .btn-secondary:active{transform:translateY(-1px);}
+
+  .hero-leaf{
+    position:absolute;
+    opacity:0.5;
+    z-index:1;
+  }
+
+  .hero-scroll-cue{
+    position:absolute;
+    bottom:28px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    color:rgba(246,241,230,0.72);
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    opacity:0;
+    animation:fadeUp 0.8s ease 0.5s forwards;
+  }
+  .hero-scroll-cue svg{animation:bob 2.2s ease-in-out infinite;}
+
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(18px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  @keyframes bob{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(6px);}
+  }
+
+  /* ===== SECTION SHARED ===== */
+  section{padding:clamp(72px, 9vw, 112px) 0;}
+  .section-head{
+    max-width:700px;
+    margin:0 auto 58px;
+    text-align:center;
+  }
+  .section-eyebrow{
+    display:block;
+    color:var(--green-500);
+    font-weight:700;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    font-size:0.82rem;
+    margin-bottom:14px;
+  }
+  .section-head h2{
+    font-size:clamp(2rem, 3.8vw, 2.9rem);
+  }
+  .section-head p{
+    color:var(--deep-green-700);
+    font-size:1.1rem;
+    margin-top:16px;
+  }
+
+  .reveal{
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.is-visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+  .reveal-stagger.is-visible{transition-delay:var(--stagger-delay, 0s);}
+
+  /* ===== ABOUT ===== */
+  .about{
+    background:var(--sand-50);
+    position:relative;
+  }
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:68px;
+    align-items:center;
+  }
+  .about-visual{
+    position:relative;
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    aspect-ratio:4/3;
+    background:
+      linear-gradient(135deg, var(--deep-green-700) 0%, var(--green-500) 50%, var(--earth-brown-500) 100%);
+    box-shadow:var(--shadow-soft);
+  }
+  .about-visual img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 32%;
+  }
+  .about-visual-tag{
+    position:absolute;
+    left:18px;
+    bottom:18px;
+    background:rgba(15,28,19,0.85);
+    color:var(--sand-50);
+    padding:9px 18px;
+    border-radius:999px;
+    font-size:0.8rem;
+    font-weight:600;
+    letter-spacing:0.02em;
+    backdrop-filter:blur(4px);
+  }
+  .about-copy h2{margin-bottom:22px;}
+  .about-copy p{
+    color:var(--deep-green-800);
+    font-size:1.07rem;
+  }
+  .about-badges{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:30px;
+  }
+  .about-badge{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    background:var(--white);
+    border:1px solid rgba(43,74,51,0.15);
+    padding:11px 18px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:0.9rem;
+    color:var(--deep-green-800);
+    box-shadow:0 4px 14px -8px rgba(15,28,19,0.2);
+    transition:transform var(--t-fast), box-shadow var(--t-fast), border-color var(--t-fast);
+  }
+  .about-badge:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 22px -10px rgba(15,28,19,0.3);
+    border-color:var(--green-accent);
+  }
+  .about-badge svg{width:18px;height:18px;flex-shrink:0;color:var(--green-500);}
+
+  /* ===== SERVICES ===== */
+  .services{
+    background:
+      linear-gradient(180deg, var(--sand-50) 0%, var(--cream) 100%);
+  }
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+  }
+  .service-card{
+    background:var(--white);
+    border-radius:var(--radius-md);
+    padding:36px 30px;
+    border:1px solid rgba(43,74,51,0.1);
+    box-shadow:0 6px 20px -14px rgba(15,28,19,0.25);
+    transition:transform var(--t-standard), box-shadow var(--t-standard), border-color var(--t-standard);
+  }
+  .service-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 36px -16px rgba(15,28,19,0.35);
+    border-color:var(--green-accent);
+  }
+  .service-icon{
+    width:54px;
+    height:54px;
+    border-radius:15px;
+    background:linear-gradient(135deg, var(--deep-green-700), var(--green-500));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:22px;
+    transition:transform var(--t-standard);
+    box-shadow:0 8px 18px -8px rgba(43,74,51,0.5);
+  }
+  .service-card:hover .service-icon{transform:scale(1.08) rotate(-4deg);}
+  .service-icon svg{width:27px;height:27px;color:var(--sand-50);}
+  .service-card h3{
+    font-size:1.2rem;
+    margin-bottom:9px;
+  }
+  .service-card p{
+    color:var(--deep-green-700);
+    font-size:0.97rem;
+    margin-bottom:0;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery{
+    background:var(--cream);
+  }
+  .gallery-lead-figure{
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-soft);
+    border:1px solid rgba(43,74,51,0.08);
+    margin-bottom:28px;
+    background:var(--white);
+  }
+  .gallery-lead-figure img{
+    width:100%;
+    max-height:460px;
+    object-fit:cover;
+    object-position:center 42%;
+  }
+  .gallery-lead-figure figcaption{
+    padding:18px 24px;
+    font-size:0.97rem;
+    color:var(--deep-green-800);
+    border-top:1px solid rgba(43,74,51,0.08);
+  }
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:26px;
+  }
+  .gallery-item{
+    position:relative;
+    border-radius:var(--radius-md);
+    overflow:hidden;
+    background:var(--white);
+    box-shadow:0 6px 20px -14px rgba(15,28,19,0.3);
+    border:1px solid rgba(43,74,51,0.08);
+    transition:transform var(--t-standard), box-shadow var(--t-standard);
+  }
+  .gallery-item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 22px 36px -18px rgba(15,28,19,0.4);
+  }
+  .gallery-figure{
+    position:relative;
+    overflow:hidden;
+    background:var(--sand-100);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .gallery-figure img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:transform 0.6s ease;
+  }
+  .gallery-item:hover .gallery-figure img{
+    transform:scale(1.025);
+  }
+  .gallery-badge{
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:rgba(15,28,19,0.85);
+    color:var(--sand-50);
+    font-size:0.72rem;
+    font-weight:700;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:999px;
+    z-index:2;
+  }
+  .gallery-caption{
+    padding:18px 20px;
+    font-size:0.94rem;
+    color:var(--deep-green-800);
+  }
+
+  /* ===== HIGHLIGHTS STRIP ===== */
+  .highlights{
+    background:
+      linear-gradient(160deg, var(--deep-green-900) 0%, var(--earth-brown-700) 130%);
+    color:var(--sand-50);
+    padding:clamp(56px, 8vw, 76px) 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .highlights::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:repeating-linear-gradient(45deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 40px);
+  }
+  .highlights-grid{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:32px;
+    text-align:center;
+  }
+  .highlight-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+  }
+  .highlight-num{
+    font-family:'Fraunces', serif;
+    font-size:clamp(2.2rem, 4vw, 2.8rem);
+    font-weight:700;
+    color:var(--earth-brown-300);
+  }
+  .highlight-label{
+    font-size:0.93rem;
+    color:var(--sand-100);
+    font-weight:500;
+    max-width:190px;
+  }
+
+  /* ===== FAQ ===== */
+  .faq{
+    background:var(--sand-50);
+  }
+  .faq-list{
+    max-width:790px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .faq-item{
+    background:var(--white);
+    border:1px solid rgba(43,74,51,0.12);
+    border-radius:var(--radius-md);
+    box-shadow:0 4px 16px -12px rgba(15,28,19,0.2);
+    overflow:hidden;
+    transition:box-shadow var(--t-standard), border-color var(--t-standard);
+  }
+  .faq-item:hover{
+    box-shadow:0 12px 28px -14px rgba(15,28,19,0.3);
+    border-color:rgba(127,168,119,0.4);
+  }
+  .faq-item summary{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    padding:23px 28px;
+    cursor:pointer;
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.1rem;
+    color:var(--deep-green-950);
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-icon{
+    flex-shrink:0;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:var(--sand-100);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:transform var(--t-standard), background var(--t-standard);
+  }
+  .faq-icon svg{width:16px;height:16px;color:var(--green-500);transition:transform var(--t-standard);}
+  .faq-item[open] .faq-icon{background:var(--green-500);}
+  .faq-item[open] .faq-icon svg{color:var(--sand-50);transform:rotate(45deg);}
+  .faq-answer{
+    padding:0 28px 26px;
+    color:var(--deep-green-800);
+    font-size:1rem;
+    max-width:64ch;
+  }
+  .faq-answer p{margin:0;}
+
+  @media (prefers-reduced-motion: no-preference){
+    .faq-answer{
+      animation:faqIn 0.35s ease;
+    }
+  }
+  @keyframes faqIn{
+    from{opacity:0; transform:translateY(-6px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  /* ===== VISIT ===== */
+  .visit{
+    background:var(--sand-50);
+  }
+  .visit-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:48px;
+  }
+  .visit-card{
+    background:var(--white);
+    border-radius:var(--radius-lg);
+    padding:46px;
+    box-shadow:var(--shadow-soft);
+    border:1px solid rgba(43,74,51,0.1);
+  }
+  .visit-row{
+    display:flex;
+    gap:18px;
+    padding:21px 0;
+    border-bottom:1px solid rgba(43,74,51,0.12);
+  }
+  .visit-row:last-child{border-bottom:none;padding-bottom:0;}
+  .visit-row:first-child{padding-top:0;}
+  .visit-icon{
+    width:46px;
+    height:46px;
+    border-radius:13px;
+    background:var(--sand-100);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+  }
+  .visit-icon svg{width:22px;height:22px;color:var(--deep-green-700);}
+  .visit-row h3{
+    font-size:1rem;
+    font-family:'Karla', sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    color:var(--green-500);
+    margin-bottom:5px;
+  }
+  .visit-row p, .visit-row a{
+    font-size:1.06rem;
+    color:var(--deep-green-950);
+    text-decoration:none;
+  }
+  .visit-row a.link{
+    text-decoration:underline;
+    text-decoration-color:var(--green-accent);
+    text-underline-offset:3px;
+    transition:color var(--t-fast);
+  }
+  .visit-row a.link:hover{color:var(--green-500);}
+  .hours-table{
+    width:100%;
+    border-collapse:collapse;
+  }
+  .hours-table th{
+    text-align:left;
+    font-size:0.75rem;
+    color:var(--deep-green-700);
+    padding-bottom:6px;
+  }
+  .hours-table td{
+    padding:3px 0;
+    font-size:0.99rem;
+  }
+  .hours-table td:first-child{
+    color:var(--deep-green-700);
+    font-weight:600;
+    padding-right:16px;
+  }
+
+  .visit-map-card{
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    position:relative;
+    box-shadow:var(--shadow-soft);
+    display:flex;
+    flex-direction:column;
+  }
+  .visit-map-visual{
+    flex:1;
+    background:
+      linear-gradient(160deg, var(--deep-green-800), var(--deep-green-950));
+    position:relative;
+    min-height:260px;
+  }
+  .visit-map-visual svg{position:absolute;inset:0;width:100%;height:100%;}
+  .visit-map-cta{
+    background:var(--deep-green-950);
+    padding:30px;
+    text-align:center;
+  }
+  .visit-map-cta p{
+    color:var(--sand-100);
+    margin-bottom:18px;
+    font-size:0.96rem;
+  }
+  .quote-note{
+    margin-top:34px;
+    padding:24px 28px;
+    background:var(--sand-100);
+    border-radius:var(--radius-md);
+    border-left:4px solid var(--green-500);
+  }
+  .quote-note p{margin:0;color:var(--deep-green-800);font-size:0.99rem;}
+
+  /* ===== FOOTER ===== */
+  .site-footer{
+    background:var(--deep-green-950);
+    color:var(--sand-100);
+    padding:58px 0 30px;
+  }
+  .footer-grid{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+    padding-bottom:38px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Fraunces', serif;
+    font-size:1.2rem;
+    font-weight:600;
+    color:var(--sand-50);
+  }
+  .footer-brand svg{width:32px;height:32px;}
+  .footer-tag{
+    color:var(--sand-100);
+    opacity:0.75;
+    font-size:0.92rem;
+    margin-top:8px;
+    max-width:320px;
+  }
+  .footer-links{
+    display:flex;
+    gap:48px;
+    flex-wrap:wrap;
+  }
+  .footer-col h4{
+    font-family:'Karla', sans-serif;
+    font-size:0.82rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--green-accent);
+    margin-bottom:14px;
+    font-weight:700;
+  }
+  .footer-col ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .footer-col a{
+    text-decoration:none;
+    color:var(--sand-100);
+    opacity:0.85;
+    transition:opacity var(--t-fast);
+    font-size:0.95rem;
+  }
+  .footer-col a:hover{opacity:1;text-decoration:underline;}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    padding-top:24px;
+    font-size:0.85rem;
+    color:var(--sand-100);
+    opacity:0.6;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 860px){
+    .main-nav{
+      position:fixed;
+      top:70px;
+      left:0;
+      right:0;
+      background:var(--deep-green-950);
+      flex-direction:column;
+      padding:8px 24px 24px;
+      transform:translateY(-12px);
+      opacity:0;
+      pointer-events:none;
+      transition:opacity var(--t-standard), transform var(--t-standard);
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      max-height:calc(100vh - 70px);
+      overflow-y:auto;
+    }
+    .main-nav.is-open{
+      opacity:1;
+      transform:translateY(0);
+      pointer-events:auto;
+    }
+    .main-nav ul{
+      flex-direction:column;
+      gap:4px;
+    }
+    .main-nav a{
+      display:block;
+      padding:14px 4px;
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+    .nav-toggle{display:flex;}
+    .header-cta .btn-call-header span.long{display:none;}
+
+    .about-grid{grid-template-columns:1fr;gap:40px;}
+    .about-visual{order:-1;}
+    .services-grid{grid-template-columns:repeat(2, 1fr);}
+    .gallery-grid{grid-template-columns:repeat(2, 1fr);}
+    .highlights-grid{grid-template-columns:repeat(2, 1fr);gap:36px;}
+    .visit-grid{grid-template-columns:1fr;}
+  }
+
+  @media (max-width: 560px){
+    .hero{padding:104px 20px 76px;}
+    section{padding:76px 0;}
+    .services-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:1fr;}
+    .highlights-grid{grid-template-columns:1fr 1fr;}
+    .visit-card{padding:30px 24px;}
+    .footer-grid{flex-direction:column;}
+    .faq-item summary{padding:18px 20px;font-size:1rem;}
+    .faq-answer{padding:0 20px 20px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{
+      animation-duration:0.001ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:0.001ms !important;
+      scroll-behavior:auto !important;
+    }
+    .hero-eyebrow,.hero h1,.hero .tagline,.hero-ctas,.hero-scroll-cue{opacity:1;animation:none;}
+    .reveal{opacity:1;transform:none;}
+  }
+</style>
+      <!-- SEO:START (generated by _seo_inject.js) -->
+    <link rel="canonical" href="https://fansist.github.io/marcos-maintenance/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Marcos Maintenance" />
+    <meta property="og:title" content="Marcos Maintenance: Lawn Care in College Area" />
+    <meta property="og:description" content="Regular yard maintenance, one-time clean-ups, sod installation, and weed removal for College Area homes." />
+    <meta property="og:url" content="https://fansist.github.io/marcos-maintenance/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://fansist.github.io/marcos-maintenance/photos/photo1.jpg" />
+    <meta property="og:image:alt" content="Before/after backyard transformation: cleared and re-graded gravel patio with new seating area and shed, replacing an overgrown side yard" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Marcos Maintenance: Lawn Care in College Area" />
+    <meta name="twitter:description" content="Regular yard maintenance, one-time clean-ups, sod installation, and weed removal for College Area homes." />
+    <meta name="twitter:image" content="https://fansist.github.io/marcos-maintenance/photos/photo1.jpg" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Marcos Maintenance","url":"https://fansist.github.io/marcos-maintenance/","image":["https://fansist.github.io/marcos-maintenance/photos/photo1.jpg"],"telephone":"(619) 822-7689","address":{"@type":"PostalAddress","addressLocality":"San Diego","addressRegion":"CA","postalCode":"92115","addressCountry":"US"},"description":"San Diego landscaping company focused on dramatic before-and-after yard transformations: sod installation, one-time yard clean-ups, and recurring monthly maintenance plans for residential properties. The team (managed by Ari) takes pride in full customer satisfaction after every job and has built...","areaServed":{"@type":"City","name":"San Diego"}}</script>
+    <!-- SEO:END -->
+  </head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Marcos Maintenance home">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#1f3626" stroke="#7fa877" stroke-width="1.5"/>
+        <path d="M24 34c0-9 -6-14-13-15 1 9 5 15 13 15z" fill="#7fa877"/>
+        <path d="M24 34c0-11 7-17 15-18 -1 10 -6 18 -15 18z" fill="#c9a874"/>
+      </svg>
+      Marcos Maintenance
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#highlights">Why Us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a class="btn-call-header" href="tel:+16198227689" aria-label="Call Marcos Maintenance at 619-822-7689">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="long">(619) 822-7689</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg" role="img" aria-label="Mature palm trees and a landscaped hillside bordering a backyard pool area, maintained by Marcos Maintenance"></div>
+    <svg class="hero-leaf" style="top:8%;left:4%;width:90px;" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5C20 20 10 55 30 90c30-5 55-30 60-60C70 25 50 5 50 5z" fill="#9dc18b" opacity="0.18"/></svg>
+    <svg class="hero-leaf" style="bottom:6%;right:6%;width:130px;" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5C20 20 10 55 30 90c30-5 55-30 60-60C70 25 50 5 50 5z" fill="#c9a874" opacity="0.16" transform="rotate(140 50 50)"/></svg>
+    <div class="hero-inner">
+      <span class="hero-eyebrow">College Area &amp; Mid-City &middot; San Diego, CA</span>
+      <h1>Marcos Maintenance</h1>
+      <p class="tagline">Trusted neighborhood landscaper since 2001, dramatic yard transformations and reliable monthly care, built on word of mouth across San Diego.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="tel:+16198227689">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call for a Free Quote
+        </a>
+        <a class="btn btn-secondary" href="#gallery">See Our Work</a>
+      </div>
+    </div>
+    <div class="hero-scroll-cue" aria-hidden="true">
+      Scroll
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <span class="section-eyebrow">About the team</span>
+        <h2 id="about-heading">Real transformations, built on trust</h2>
+        <p>Marcos Maintenance is a San Diego landscaping company focused on dramatic before-and-after yard transformations: sod installation, one-time yard clean-ups, and recurring monthly maintenance plans for residential properties.</p>
+        <p>The team, managed by Ari, takes pride in full customer satisfaction after every job, and has built a reputation of 101 Yelp reviews and 76 project photos purely on word of mouth, with no advertising and no website until now.</p>
+        <div class="about-badges">
+          <span class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 2v20M2 12h20"/></svg>
+            Family-run since 2001
+          </span>
+          <span class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 2l2.4 6.6L21 10l-5.5 4.3L17 21l-5-3.8L7 21l1.5-6.7L3 10l6.6-1.4z"/></svg>
+            4.5 stars on Yelp
+          </span>
+          <span class="about-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg>
+            76 project photos
+          </span>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <img src="photos/photo5.jpg" alt="Finished backyard garden bed with fresh mulch, an ornamental tree, a birdbath, and a greenhouse in the background, completed by Marcos Maintenance" decoding="async">
+        <span class="about-visual-tag">College Area backyard</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">What we do</span>
+        <h2 id="services-heading">Landscaping services for San Diego yards</h2>
+        <p>From one-time clean-ups to ongoing monthly care, every job is handled with the same attention to detail.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg></div>
+          <h3>Lawn &amp; Yard Maintenance</h3>
+          <p>Recurring monthly service to keep residential yards consistently clean, healthy, and well-kept.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 20h18M5 20V10l7-6 7 6v10M9 20v-6h6v6"/></svg></div>
+          <h3>One-Time Yard Clean-Ups</h3>
+          <p>A single deep clean-up to reset an overgrown or neglected yard, no ongoing commitment required.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+          <h3>Sod Installation</h3>
+          <p>Full sod installation for dramatic, fast lawn transformations, the specialty behind our before-and-after work.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 22s-8-5.5-8-12a8 8 0 0116 0c0 6.5-8 12-8 12z"/><path d="M12 6v8M9 11l3 3 3-3"/></svg></div>
+          <h3>Weed Removal</h3>
+          <p>Thorough weed clearing so your lawn and beds stay clean between visits.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3c3 3 5 6 5 10a5 5 0 01-10 0c0-4 2-7 5-10z"/></svg></div>
+          <h3>Plant &amp; Hedge Shaping</h3>
+          <p>Trimming and shaping for hedges and plants to keep landscaping sharp and well-defined.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 18c2-6 6-9 8-9s6 3 8 9" /><path d="M2 20h20"/></svg></div>
+          <h3>Mulch Application</h3>
+          <p>Fresh mulch application to protect beds, retain moisture, and finish off a clean landscape look.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Recent work</span>
+        <h2 id="gallery-heading">Before &amp; after, straight from the yard</h2>
+        <p>A few of the 76 project photos our customers have shared on Yelp.</p>
+      </div>
+
+      <figure class="gallery-lead-figure reveal">
+        <img src="photos/photo6.jpg" alt="Mature palm trees and a landscaped hillside bordering a backyard pool area, kept tidy by Marcos Maintenance" decoding="async">
+        <figcaption>Mature palms and a landscaped hillside kept tidy around a backyard pool area.</figcaption>
+      </figure>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item reveal">
+          <div class="gallery-figure">
+            <span class="gallery-badge">Backyard patio</span>
+            <img src="photos/photo1.jpg" alt="Before and after comparison: an overgrown backyard side area transformed into a clean gravel patio with a new seating area and storage shed" decoding="async">
+          </div>
+          <figcaption class="gallery-caption">Backyard patio reset: overgrown side yard cleared and re-graded into a usable gravel seating area.</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-figure">
+            <span class="gallery-badge">Front yard</span>
+            <img src="photos/photo2.jpg" alt="Before and after comparison: an overgrown front yard planter bed transformed into a clean gravel bed with trimmed shrubs along a paver walkway" decoding="async">
+          </div>
+          <figcaption class="gallery-caption">Front yard makeover: weedy planter beds cleaned up into a sharp gravel bed with trimmed shrubs.</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-figure">
+            <span class="gallery-badge">Side yard</span>
+            <img src="photos/photo3.jpg" alt="Before and after comparison: a cracked, weed-choked concrete side-yard walkway cleaned up next to the house" decoding="async">
+          </div>
+          <figcaption class="gallery-caption">Side-yard clean-up: cracked, weed-choked concrete cleared and restored to a usable driveway path.</figcaption>
+        </figure>
+        <figure class="gallery-item reveal">
+          <div class="gallery-figure">
+            <span class="gallery-badge">Parkway strip</span>
+            <img src="photos/photo4.jpg" alt="Before and after comparison: a weedy street-side parkway strip cleaned up around a palm tree with healthy agave plants" decoding="async">
+          </div>
+          <figcaption class="gallery-caption">Parkway strip clean-up: weedy gravel bed around a street palm refreshed with healthy agave plants.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights" id="highlights" aria-labelledby="highlights-heading">
+    <div class="container">
+      <div class="section-head reveal" style="margin-bottom:44px;">
+        <span class="section-eyebrow" style="color:var(--moss);">Why choose us</span>
+        <h2 id="highlights-heading" style="color:var(--sand-50);">A neighborhood track record, not a sales pitch</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-item reveal">
+          <span class="highlight-num">101</span>
+          <span class="highlight-label">Yelp reviews, 4.5 stars</span>
+        </div>
+        <div class="highlight-item reveal">
+          <span class="highlight-num">2001</span>
+          <span class="highlight-label">Serving San Diego since</span>
+        </div>
+        <div class="highlight-item reveal">
+          <span class="highlight-num">76</span>
+          <span class="highlight-label">Before &amp; after project photos</span>
+        </div>
+        <div class="highlight-item reveal">
+          <span class="highlight-num">92115</span>
+          <span class="highlight-label">College Area / Mid-City San Diego</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Questions</span>
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        <p>A few honest answers before you call, if yours isn't here, just ask.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>
+            What areas of San Diego do you serve?
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span>
+          </summary>
+          <div class="faq-answer"><p>We're based in and primarily serve San Diego's College Area and Mid-City neighborhoods (92115), with jobs across the greater San Diego area. Call or text to confirm we cover your address before scheduling.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>
+            Do you offer one-time clean-ups or only ongoing contracts?
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span>
+          </summary>
+          <div class="faq-answer"><p>Both. We handle single yard clean-ups for overgrown or neglected properties with no ongoing commitment, as well as recurring monthly maintenance plans for customers who want consistent upkeep.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>
+            How do I get a quote?
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span>
+          </summary>
+          <div class="faq-answer"><p>Give us a call at <a class="link" href="tel:+16198227689" style="text-decoration:underline;">(619) 822-7689</a> and tell us about your yard, size, current condition, and what you're hoping to change. Most jobs start with a quick phone conversation.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>
+            Do you install sod, or just maintain existing lawns?
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span>
+          </summary>
+          <div class="faq-answer"><p>Both, full sod installation is one of our specialties for dramatic lawn transformations, and we also provide ongoing lawn and yard maintenance to keep an existing lawn healthy afterward.</p></div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>
+            What are your hours?
+            <span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span>
+          </summary>
+          <div class="faq-answer"><p>We're generally available Monday through Friday, 8:00 AM to 4:00 PM, and Saturday mornings. We're closed Sundays. Call ahead to schedule a specific visit.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit" aria-labelledby="visit-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">Get in touch</span>
+        <h2 id="visit-heading">Serving the College Area &amp; Mid-City</h2>
+        <p>Reach out for a quote, most jobs start with a quick call.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <div class="visit-row">
+            <div class="visit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <h3>Service Area</h3>
+              <p>San Diego, CA 92115, College Area / Mid-City</p>
+            </div>
+          </div>
+          <div class="visit-row">
+            <div class="visit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div>
+              <h3>Phone</h3>
+              <a class="link" href="tel:+16198227689">(619) 822-7689</a>
+            </div>
+          </div>
+          <div class="visit-row">
+            <div class="visit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <div>
+              <h3>Hours</h3>
+              <table class="hours-table" aria-label="Business hours">
+                <tbody>
+                  <tr><td>Mon, Fri</td><td>8:00 AM, 4:00 PM</td></tr>
+                  <tr><td>Saturday</td><td>Mornings</td></tr>
+                  <tr><td>Sunday</td><td>Closed</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="quote-note">
+            <p>Ready for a quote? Give us a call at <a class="link" href="tel:+16198227689" style="font-weight:700;">(619) 822-7689</a> and tell us about your yard, we'll take it from there.</p>
+          </div>
+        </div>
+
+        <div class="visit-map-card reveal">
+          <div class="visit-map-visual">
+            <svg viewBox="0 0 300 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="300" height="260" fill="#17281c"/>
+              <g stroke="#3d6247" stroke-width="2" opacity="0.6">
+                <line x1="0" y1="60" x2="300" y2="60"/>
+                <line x1="0" y1="140" x2="300" y2="140"/>
+                <line x1="0" y1="200" x2="300" y2="200"/>
+                <line x1="70" y1="0" x2="70" y2="260"/>
+                <line x1="180" y1="0" x2="180" y2="260"/>
+                <line x1="240" y1="0" x2="240" y2="260"/>
+              </g>
+              <circle cx="150" cy="120" r="10" fill="#c9a874"/>
+              <circle cx="150" cy="120" r="22" fill="none" stroke="#c9a874" stroke-width="2" opacity="0.5"/>
+              <path d="M150 90c-14 0-24 11-24 24 0 18 24 42 24 42s24-24 24-42c0-13-10-24-24-24z" fill="#e0a63a" opacity="0.92"/>
+              <circle cx="150" cy="112" r="8" fill="#17281c"/>
+            </svg>
+          </div>
+          <div class="visit-map-cta">
+            <p>Find us on the map and get directions from anywhere in San Diego.</p>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Marcos%20Maintenance%20San%20Diego%2C%20CA%2092115" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="23" fill="#1f3626" stroke="#7fa877" stroke-width="1.5"/>
+            <path d="M24 34c0-9 -6-14-13-15 1 9 5 15 13 15z" fill="#7fa877"/>
+            <path d="M24 34c0-11 7-17 15-18 -1 10 -6 18 -15 18z" fill="#c9a874"/>
+          </svg>
+          Marcos Maintenance
+        </div>
+        <p class="footer-tag">Family-run landscaping in San Diego's College Area &amp; Mid-City since 2001.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#highlights">Why Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#visit">Visit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+16198227689">(619) 822-7689</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Marcos%20Maintenance%20San%20Diego%2C%20CA%2092115" target="_blank" rel="noopener noreferrer">San Diego, CA 92115</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Marcos Maintenance. San Diego, CA.</span>
+      <span>Landscaping &amp; Lawn Maintenance &middot; College Area / Mid-City</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    "use strict";
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('main-nav');
+    if(toggle && nav){
+      toggle.addEventListener('click', function(){
+        var isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      nav.querySelectorAll('a').forEach(function(link){
+        link.addEventListener('click', function(){
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && nav.classList.contains('is-open')){
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.focus();
+        }
+      });
+    }
+
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reveals = document.querySelectorAll('.reveal');
+    if(prefersReduced || !('IntersectionObserver' in window)){
+      reveals.forEach(function(el){ el.classList.add('is-visible'); });
+    } else {
+      var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      reveals.forEach(function(el){ observer.observe(el); });
+    }
+
+    /* Only one FAQ answer open at a time */
+    var faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(function(item){
+      item.addEventListener('toggle', function(){
+        if(item.open){
+          faqItems.forEach(function(other){
+            if(other !== item) other.open = false;
+          });
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
